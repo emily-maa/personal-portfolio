@@ -1,0 +1,40 @@
+
+.navbar {
+    background-color: var(--background-color);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border: 3px solid var(--text-color);
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.navitem {
+    margin: 0;
+    padding: 0;
+}
+
+.navitem a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Roboto Mono';
+}
+
+.navitem a:hover {
+    text-decoration: underline;
+}
+@media (width >=800px) {
+    .navbar {
+        
+    }
+}

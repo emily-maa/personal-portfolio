@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    span {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    img {
+        width: 16px;
+    }
+}
+
+.skillList {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    flex-wrap: wrap;
+    max-width: 26ch;
+    
+}
+.skillList p{
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+    margin: 5px
+}
+
+hr {
+    width: 100px;
+    height: 1px;
+    border: none;
+    background-color: var(--text-color);
+    margin: 30px auto;
+}
+
+@media (width >=800px) {
+    .skillList {
+        max-width: fit-content;
+        gap: 30px;
+        display: flex;
+        p {
+            font-size: 20px;
+        }
+    }
+
+    hr {
+        width: 300px;
+    }
+}
