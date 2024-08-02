@@ -39,11 +39,11 @@ hr {
 @media (width >=800px) {
     .skillList {
         max-width: fit-content;
-        gap: 30px;
+        /* gap: 30px; */
         display: flex;
-        p {
-            font-size: 20px;
-        }
+        /* p {
+            font-size: 16px;
+        } */
     }
 
     hr {

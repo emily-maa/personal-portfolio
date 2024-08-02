@@ -44,7 +44,7 @@ function Projects() {
         />
         <ProjectCard
           src={portfolio}
-          link="https://github.com/hanapan0/M-BeWell23-24"
+          link="https://github.com/emily-maa/personal-portfolio"
           h3="Personal Portfolio"
           skills= {['React', 'Context API', 'Javascript', 'HTML','CSS', 'JSX', 'Node', 'Vite']}
           p="This portfolio page! Built with responsive design principles and a light-dark toggle mode."

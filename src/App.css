@@ -1,5 +1,5 @@
 :root {
-  --background-color: #fff;
+  --background: linear-gradient(to bottom, #f0d6e1,#e5c7f7,#9ee1f0);
   --btn-color: #0987f2;
   --btn-text-color: #fff;
   --project-card-bg: #ffffff00;
@@ -9,7 +9,7 @@
 }
 
 [data-theme='dark'] {
-  --background-color: #222;
+  --background: #222;
   --btn-color: #fff;
   --btn-text-color: #222;
   --project-card-bg: #fff;
@@ -19,7 +19,7 @@
 }
 
 body {
-  background-color: var(--background-color);
+  background: var(--background);
   display: flex;
   justify-content: center;
   margin: 0 auto 60px;
@@ -62,7 +62,7 @@ h1 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
 }
 
@@ -89,7 +89,7 @@ p {
   }
 
   p {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .sectionTitle {

@@ -8,6 +8,8 @@ import githubLight from '../assets/github-light.svg';
 import githubDark from '../assets/github-dark.svg';
 import linkIconLight from '../assets/link-light.svg'
 import linkIconDark from '../assets/link-dark.svg'
+import styles from './ProjectCardStyles.module.css';
+
 
 function ProjectCard({ src, link, h3, skills, p, github, website}) {
   const { theme } = useTheme();
@@ -15,8 +17,8 @@ function ProjectCard({ src, link, h3, skills, p, github, website}) {
   const githubIcon = theme === 'light' ? githubLight : githubDark;
   const linkIcon = theme === 'light' ? linkIconLight : linkIconDark;
   return (
-    <a href={link} target="_blank" rel="noopener noreferrer">
-      <img className="hover" src={src} alt={`${h3} logo`} />
+    <a className={styles.card} href={link} target="_blank" rel="noopener noreferrer">
+      <img className="hover" src={src} alt={`${h3} logo`}/>
       <h3>{h3}</h3>
       {github && <span>
           <a href={github} target="_blank">
