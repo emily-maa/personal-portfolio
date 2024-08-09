@@ -1,5 +1,6 @@
 :root {
   --background: linear-gradient(to bottom, #f0d6e1,#e5c7f7,#9ee1f0);
+  --navbar-color:#f0d6e1;
   --btn-color: #0987f2;
   --btn-text-color: #fff;
   --project-card-bg: #ffffff00;
@@ -10,6 +11,7 @@
 
 [data-theme='dark'] {
   --background: #222;
+  --navbar-color:#222;
   --btn-color: #fff;
   --btn-text-color: #222;
   --project-card-bg: #fff;

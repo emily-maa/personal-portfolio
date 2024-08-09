@@ -1,13 +1,11 @@
 
 .navbar {
-    background-color: var(--background-color);
+    background-color: var(--background);
     padding: 1rem;
     position: fixed;
-    width: 100%;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 1000;
-    border: 3px solid var(--text-color);
 }
 
 .navlist {
@@ -19,22 +17,52 @@
 }
 
 .navitem {
-    margin: 0;
-    padding: 0;
+    margin: 0 2vw 0 2vw;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--btn-color);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .navitem a {
-    color: var(--text-color);
+    color: var(--btn-text-color);
     text-decoration: none;
     font-size: 1.2rem;
     font-family: 'Roboto Mono';
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .navitem a:hover {
     text-decoration: underline;
 }
-@media (width >=800px) {
-    .navbar {
+.hamburger{
+    display: none;
+    position: fixed;
+    right: 40px;
+}
+@media screen and (max-width: 800px) {
+    .hamburger {
+        display: block;
+        font-size: 40px;
+    }
+
+    .navlist {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 30px;
         
+    }
+
+    .navlist.active {
+        display: block;
+        /* position: fixed;
+                top: 10px; */
+    }
+
+    .navitem {
+        margin: 1rem 0;
+        text-align: center;
     }
 }
