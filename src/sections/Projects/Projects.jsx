@@ -2,7 +2,7 @@ import styles from './ProjectsStyles.module.css';
 import eatwithem from '../../assets/eat-with-em.png';
 import mbewell from '../../assets/mbewell.png'
 import crochet from '../../assets/crochet.png'
-import fitLift from '../../assets/fitlift.png';
+import expense from '../../assets/expense.png';
 import ProjectCard from '../../common/ProjectCard';
 import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
@@ -33,6 +33,15 @@ function Projects() {
           skills= {['Python', 'Image Processing', 'CLI', 'Visualization']}
           p="A user-friendly interface that converts an image into a crochet grid. Supports size adjustment and custom color selection."
           github={"https://github.com/emily-maa/crochet-pattern-generator"}
+        />
+
+        <ProjectCard
+          src={expense}
+          link="https://github.com/emily-maa/expense-tracker-frontend-graphql"
+          h3="Expense Tracker"
+          skills= {['React', 'CSS', 'Context API', 'Java', 'REST API', 'Springboot', 'GraphQL']}
+          p="An app to track your expenses, income, and net balance with personalized access through a login system."
+          github={"https://github.com/emily-maa/expense-tracker-frontend-graphql"}
         />
         <ProjectCard
           src={mbewell}
