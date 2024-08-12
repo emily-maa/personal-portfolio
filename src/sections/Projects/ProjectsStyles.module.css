@@ -24,6 +24,7 @@
     }
     p{
         max-width: 40ch;
+        margin: auto;
     }
 }
 
@@ -46,7 +47,8 @@
         justify-content: space-evenly;
         padding: 0 30px;
         a{
-            width: 40%;
+            max-width: 500px;
+            /* width: 40%; */
         }
     }
 }  

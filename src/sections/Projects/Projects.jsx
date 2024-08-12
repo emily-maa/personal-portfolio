@@ -1,5 +1,5 @@
 import styles from './ProjectsStyles.module.css';
-import spaghetti from '../../assets/spaghetti.png';
+import eatwithem from '../../assets/eat-with-em.png';
 import mbewell from '../../assets/mbewell.png'
 import crochet from '../../assets/crochet.png'
 import fitLift from '../../assets/fitlift.png';
@@ -17,7 +17,7 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={spaghetti}
+          src={eatwithem}
           link="https://emily-maa.github.io/eat-with-em/"
           h3="Eat with Em"
           skills= {['HTML', 'CSS', 'Javascript', 'User Experience Design', 'Responsive Design']}
